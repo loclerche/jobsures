@@ -12,7 +12,7 @@ const Header = () => {
         { /* Logo */}
         <div>
           <img
-            src="/assets/logo.png" 
+            src="/assets/logo1.png" 
             alt="logo"
             width={100}
             height={100}
@@ -22,9 +22,11 @@ const Header = () => {
 
         {/* Navigation links (Desktop) */}
         <nav className="hidden md:flex items-center space-x-6">
+
+        <Link href="/" className="text-black hover:text-red-400"> Appropos</Link>
           
-          <Link href="/AboutMe" className="text-black hover:text-yellow-400"> Voir les Offres</Link>
-          <Link href="/jobpostingform" className="bg-transparent border-2 border-purple-700 text-yello-400 hover:bg-yellow-700 hover:text-gray-900 font-bold py-3 px-8 rounded-full transition-all duration-300">
+          <Link href="/job-listing" className="text-black hover:text-red-400"> Voir les Offres</Link>
+          <Link href="/jobpostinform" className="bg-transparent border-2 border-red-500 text-yello-400 hover:bg-[#0097b2] hover:text-gray-900 font-bold py-3 px-8 rounded-full transition-all duration-300">
             Publier offre
           </Link>
         </nav>
